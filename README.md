@@ -1,5 +1,7 @@
 # NFTs-Market-Place-Server
 
+No Country Final Project.
+
 Introducción.
 
 NFTs Market Place, es un espacio para que los usuario puedan comprar y vender NFTs. Pudiendo crear una cuenta de usuario que les permita la compra y la venta de los activos digitales.
