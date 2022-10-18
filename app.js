@@ -3,6 +3,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 const compression = require("compression");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 dotenv.config({ path: "./config.env" });
 //controller
@@ -23,6 +24,8 @@ app.use(compression());
 
 if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
 else if (process.env.NODE_ENV === "production") app.use(morgan("combine"));
+
+app.use(cors());
 
 app.use("/api/v1/users", usersRouter);
 app.use("/api/v1/nfts", nftsRouter);
